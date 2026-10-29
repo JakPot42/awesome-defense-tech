@@ -264,13 +264,12 @@ Everything here is **free or free-tier accessible**. Nothing requires security c
 
 ## Worked Examples
 
-All 49 projects below are part of a single portfolio built between June 9–25, 2026. Each is a standalone tool — no shared infrastructure. Most are CLI-first; 25 are deployed as web apps on Render's free tier.
+All 46 projects below are part of a single portfolio built between June 9 and June 25, 2026. Each is a standalone tool; no shared infrastructure. Most are CLI-first; 23 are deployed as web apps on Render's free tier.
 
 ### Threat Intelligence and Influence Operations
 
 - [SENTINEL](https://sentinel-io-engine.onrender.com) — Ingests adversary RSS/news feeds, clusters posts by DISARM TTP using cosine similarity, and generates an analyst-style intelligence assessment. Uses the DISARM Framework and ICD 203 analytic confidence vocabulary.
 - [Dragonbridge/Spamouflage Behavioral Fingerprint Analyzer](https://github.com/JakPot42/dragonbridge-analyzer) — Scores content samples against 12 documented Dragonbridge/Spamouflage behavioral indicators from public Meta ATR, Google/Mandiant, and Stanford Internet Observatory takedown reports. Deterministic scoring. Enforces non-attribution framing throughout. 230 tests.
-- [IP Theft Pattern Database](https://github.com/JakPot42/ip-theft-db) — Pattern database of documented intellectual property theft operations by method, sector, and actor type. Scores a given scenario against 443 tests. Built from public DoJ indictments and NCSC/FBI advisories.
 - [OSINT Brief Generator](https://github.com/JakPot42/osint-brief) — Compiles an intelligence brief for a named entity by querying open sources (web, news, regulatory filings). Claude synthesizes the raw hits into an ICD 203-formatted product with source citations and confidence levels.
 - [FL OSINT Triage](https://github.com/JakPot42/osint-triage) — Foreign-language OSINT triage tool. Detects language, scores relevance, and queues items for analyst review. Designed for document volumes too large to manually translate.
 - [Red Team Evaluation](https://github.com/JakPot42/redteam-eval) — Adversarial evaluation framework for AI systems. Runs structured red-team scenarios and scores model responses against safety criteria.
@@ -290,7 +289,6 @@ All 49 projects below are part of a single portfolio built between June 9–25, 
 - [Defense Budget & Appropriations Tracker](https://github.com/JakPot42/defense-budget-tracker) — Tracks DoD funding for AI/ML, Hypersonics, Space, and Cyber across FY2022–2026. RDT&E vs. Procurement vs. O&M breakdowns. CAGR and year-over-year trend classification. NDAA provisions seeded from public DoD budget documents and CRS reports. Uses USASpending.gov and congress.gov APIs. 204 tests.
 - [Pre-Acquisition Intelligence Brief](https://github.com/JakPot42/acquisition-brief) — Generates a pre-deal intelligence brief for a target company by querying USPTO, CourtListener, SEC EDGAR, and SAM.gov. Deterministic scoring engine (IP strength, litigation risk, regulatory exposure, contract dependency). Demo: Parsons Corporation. 221 tests.
 - [CFIUS Screener](https://cfius-screener.onrender.com) — Scores a proposed investment transaction against the Part 800 CFIUS decision tree. Produces a TVC risk scorecard (Technology, Infrastructure, Data) and flags mandatory filing triggers under FIRRMA. Deterministic — Claude never makes a legal determination.
-- [FriendShore](https://friendshore-supply-chain.onrender.com) — BOM (Bill of Materials) → Tier 1-3 supply chain graph with SPF (Single Point of Failure) detection. OFAC SDN screening of all nodes. Flags entities with Chinese parent ownership and potential ITAR/EAR entanglements.
 - [Security Clearance Advisor](https://clearance-advisor.onrender.com) — Evaluates clearance eligibility scenarios against all 13 SEAD 4 adjudicative criteria. Deterministic whole-person analysis with mitigating/aggravating factors. Based on the Adjudicative Desk Reference.
 
 ### OSINT and Strategic Intelligence
@@ -334,7 +332,6 @@ All 49 projects below are part of a single portfolio built between June 9–25, 
 
 ### Supply Chain and Foreign Investment Risk
 
-- [FriendShore](https://friendshore-supply-chain.onrender.com) — See [Defense Acquisition and Contracting](#defense-acquisition-and-contracting).
 - [CFIUS Screener](https://cfius-screener.onrender.com) — See [Defense Acquisition and Contracting](#defense-acquisition-and-contracting).
 - [Gene Drive Ecosystem Sim](https://github.com/JakPot42/gene-drive-sim) — Agent-based simulation of gene drive spread in an ecosystem. Relevant to biosecurity policy: models containment strategies, reversal scenarios, and ecological risk under different drive architectures.
 - [MOF Discovery](https://mof-discovery.onrender.com) — Screens the CoRE MOF database for Metal-Organic Frameworks matching target gas capture properties. Demo: CWA (chemical warfare agent) simulant capture for filtration material R&D.
@@ -346,7 +343,6 @@ All 49 projects below are part of a single portfolio built between June 9–25, 
 - [SCOTUS Analyzer](https://scotus-analyzer.onrender.com) — Analyzes Supreme Court opinion text from Oyez for legal doctrine evolution. Tracks doctrine drift over time for national security and administrative law cases.
 - [Litigation Network](https://litigation-network.onrender.com) — Maps litigation relationships between defense industry entities using CourtListener. Identifies repeat litigants, co-defendants, and influential precedents in defense contracting disputes.
 - [Citation Checker](https://citation-checker-9d3a.onrender.com) — Verifies that legal citations in a document exist, are accurate, and support the claimed propositions. Uses CourtListener for case retrieval and Claude for proposition matching.
-- [Civic RAG](https://civic-rag.onrender.com) — Retrieval-augmented generation over government documents (federal regulations, agency guidance, congressional reports). Answers policy questions with citations to source documents.
 - [Lease Translator](https://lease-translator.onrender.com) — Plain-language explanation of government lease and facility agreement terms. Flags non-standard clauses and uses Z3 to check clause consistency before synthesis.
 - [Agora](https://agora-oaje.onrender.com) — Public deliberation analytics tool. Aggregates and analyzes public comment patterns across regulatory proceedings.
 
